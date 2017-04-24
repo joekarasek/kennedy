@@ -1,7 +1,7 @@
 //Overrides for Canvas
 #footer {
   position: relative;
-  background-color: #118E94;
+  background-color: #444444;
   border-top: none;
   a {
     @include link-color(#ffffff);
@@ -30,11 +30,6 @@
     color: #ffffff;
     margin-bottom: 5px;
   }
-  .ada-link {
-    font-weight: 400;
-    color: #ffffff;
-    text-decoration: underline;
-  }
 
   .facebook-link {
     margin-bottom: 20px;
@@ -42,8 +37,15 @@
 
   .flex--wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    @media (max-width: $width-sm) {
+      flex-direction: column;
+      .text {
+        order: 1;
+      }
+    }
   }
 
 }

@@ -2,12 +2,10 @@
 
     <div class="footer-padding">
         <div class="flex--wrapper">
-            <a href="https://www.facebook.com/Kerbersmiles/" class="facebook-link" target="_blank"><img src="assets/FB-FindUsonFacebook-online-1024.png" alt="Find us on Facebook"></a>
             <div class="text">
-                <p class="notd tyson-steele-text">Copyright &copy; 2017 All Rights Reserved by <a href="http://www.tysonsteele.com/" target="_blank" class="">Tyson<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">&nbsp;</span>Steele<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">&nbsp;</span>Associates</a>.</p>
+                <p class="notd tyson-steele-text">Copyright &copy; <script>document.write(+new Date().getFullYear());</script> All Rights Reserved by <a href="http://www.tysonsteele.com/" target="_blank" class="">Tyson<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">&nbsp;</span>Steele<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">&nbsp;</span>Associates</a>.</p>
             </div>
-            <p><a href="/assets/ADA-Accessibility-Statement.rtf" class="ada-link" target="_blank">ADA Accessibility Statement</a></p>
-            {#{% include 'molecules/social-media-links.twig' %}#}
+            {% include 'molecules/social-media-links.twig' %}
         </div>
     </div>
 
