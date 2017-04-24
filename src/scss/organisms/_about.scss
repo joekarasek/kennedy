@@ -1,0 +1,46 @@
+.about {
+  background-image: url('/assets/kerber-team-section.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80% center;
+  @media screen and (max-width: $width-sm) {
+    background-image: none;
+    background-color: #118e94;
+  }
+  
+  &__main {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+    &__heading {
+      color: #ffffff;
+      margin-bottom: 45px;
+      @media (max-width: $width-sm - 1) {
+        text-align: center;
+      }
+    }
+    &__doctor {
+      color: #f7eb3f;
+      margin-bottom: 5px;
+      line-height: 1;
+      &--title {
+        @include h4();
+      }
+    }
+    &__doctor-sub {
+      color: #ffffff;
+    }
+    &__copy {
+      color: #ffffff;
+      line-height: 1.1;
+    }
+
+  &--mobile-fix {
+    display: none;
+    @media (max-width: $width-sm - 1) {
+      margin-top: -60px;
+      display: block;
+    }
+  }
+}
+

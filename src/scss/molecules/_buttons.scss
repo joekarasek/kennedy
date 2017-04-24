@@ -1,0 +1,45 @@
+a.btn,
+button.btn {
+  font-family: $ff-lato;
+  font-weight: 400 !important;
+
+  background-color: #EC008C;
+  color: $c-white;
+  border-radius: 30px;
+  &:hover, &:focus {
+    background-color: darken(#EC008C, 15% );
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.36);
+    transition: all .3s ease;
+    //transition: background-color .3s ease;
+    text-decoration: none;
+    color: $c-white;
+  }
+
+  padding: $spacing-sm $spacing-md;
+
+  font-size: 17px;
+  @media screen and (max-width: $width-sm) {
+    font-size: 16px;
+  }
+
+  &.shadowed {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.30);
+  }
+
+  &.form-btn {
+    width: 100%;
+
+  }
+
+}
+
+
+button.btn-style-2 {
+  color: #67250d;
+  background: #fbad17;
+  border: 2px solid #67250d;
+}
+
+button.btn {
+  text-transform: uppercase;
+}

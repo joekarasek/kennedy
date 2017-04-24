@@ -1,0 +1,29 @@
+<section id="section-services">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-md-5 col-lg-4">
+                <div class="heading">
+                    <h2>Comprehensive Services</h2>
+                    <h5>With our kid-oriented style and fun personalities, we get children excited about their dental
+                        care, helping them to develop healthy habits that will last a lifetime.</h5>
+                </div>
+
+                <ul class="service-list">
+                    {% for service in services %}
+                        <li class="service-list__item">
+                            <a href="#" data-toggle="modal" data-target="#{{ service.modalTarget }}">
+                                <i class="icon-ok-sign"></i>
+                                <h5>{{ service.title }}</h5>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-services-image">
+        <img src="/assets/services-mobile.jpg" alt="child enjoying herself at the dentist">
+    </div>
+
+</section>

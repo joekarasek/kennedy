@@ -1,0 +1,65 @@
+#section-services {
+  background-image: url('/assets/services-section.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 75% center;
+  @media (max-width: $width-sm - 1) {
+    background-image: none;
+    background-color: #ffffff;
+  }
+  .mobile-services-image {
+    display: none;
+    @media (max-width: $width-sm - 1) {
+      margin-top: -100px;
+      display: block;
+    }
+  }
+
+  .heading {
+    text-align: left;
+    h2 {
+      color: #118E94;
+      margin-bottom: 10px;
+      padding-top: $spacing-md;
+      padding-bottom: $spacing-sm;
+    }
+    h5 {
+      line-height: 1;
+    }
+  }
+
+  .service-list {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__item {
+      list-style: none;
+      clear: both;
+      h5 {
+        margin-bottom: -12px;
+        line-height: 1;
+        margin-top: 0px;
+        padding-top: 8px;
+      }
+      p {
+        list-style: none;
+        font-size: 21px;
+        font-family: $ff-crimson;
+        margin-bottom: 0;
+        line-height: 1.1;
+      }
+      .icon-ok-sign {
+        float: left;
+        margin-right: 10px;
+        font-size: 24px;
+        color: #118E94;
+      }
+      a:hover {
+        .icon-ok-sign {
+          color: #22BBC3;
+          transition: color .3s ease;
+        }
+      }
+    }
+  }
+
+}

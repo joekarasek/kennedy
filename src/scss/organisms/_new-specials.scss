@@ -1,0 +1,128 @@
+#section-specials {
+
+  background:url('/assets/offers-section.jpg');
+  background-size:cover;
+  padding:50px 0;
+  background-repeat:no-repeat;
+  background-position: center top;
+  @media (max-width: 992px) {
+    background:#DDC131;
+    padding-bottom:0;
+  }
+
+  .heading  {
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    @media (max-width: $width-md) {
+      text-align: center;
+    }
+    .title {
+      color: #0A6B70;
+      font-weight: 700;
+      margin-bottom: 15px;
+      line-height: 1.2;
+    }
+    .sub-title {
+      color: #000000;
+      line-height: 1;
+      margin-bottom: 15px;
+    }
+    .sub-title-two {
+      color: #000000;
+      line-height: 1;
+    }
+  }
+
+
+  .offer-card {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    @media (max-width: $width-md) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__price-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 145px;
+      width: 145px;
+      background-color: #ffffff;
+      border-radius: 99999px;
+      margin-bottom: 30px;
+    }
+      &__price {
+        font-family: $ff-lato;
+        font-weight: 700;
+        font-size: 80px;
+        margin-bottom: 0;
+      }
+      &__price:before {
+        content: '$';
+        font-weight: 700;
+        font-family: "Lato", serif;
+        position: absolute;
+        left: 10px;
+        top: 30px;
+        font-size: 35px;
+      }
+      &__free {
+        color: #6d03ca;
+        font-size: 45px;
+        margin-bottom: 0;
+        font-family: $ff-lato;
+      }
+
+    &__text-wrapper {
+      flex-shrink: 99999;
+      padding-left: 15px;
+    }
+      &__title {
+        line-height: 1;
+        margin-bottom: 10px;
+      }
+      &__copy {
+        color: #000000;
+        line-height: 1.1;
+      }
+      &__codes {
+        color: #000000;
+        margin-bottom: 40px;
+      }
+
+
+    //Coloring for offer cards
+    $card-one: #D0027C;
+    $card-two: #0A6B70;
+    $card-three: #6D03CA;
+    &:nth-child(1) {
+      .offer-card__price {
+        color: $card-one;
+      }
+      .offer-card__title {
+        color: $card-one;
+      }
+    }
+    &:nth-child(2) {
+      .offer-card__price {
+        color: $card-two;
+      }
+      .offer-card__title {
+        color: $card-two;
+      }
+    }
+    &:nth-child(3) {
+      .offer-card__free {
+        color: $card-three;
+      }
+      .offer-card__title {
+        color: $card-three;
+      }
+    }
+  }
+
+}
