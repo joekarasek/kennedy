@@ -1,15 +1,8 @@
 #section-reviews {
-  //background-image: url('/assets/reviews-bkgd.jpg');
-  //background-attachment: fixed;
-  //@include parallax-background;
-  //@media  screen and (max-width: $width-md) {
-  //  background-attachment: inherit;
-  //  background-image: none;
-  //  background-color: $c-grey-orange;
-  //  h2 {
-  //    color: $c-grey-blue !important;
-  //  }
-  //}
+  background-image: url('/assets/reviews-parallax.jpg');
+  background-attachment: fixed;
+  @include parallax-background;
+
 
   background-color: #118E94;
 
@@ -18,19 +11,18 @@
     padding-bottom: $spacing-sm;
   }
   h2 {
-    font-family: $ff-dancing;
     text-align: center;
     margin-bottom: $spacing-xs;
     margin-top: $spacing-md;
     font-weight: 700;
-    //text-shadow: 0 2px 4px rgba(0, 0, 0, 0.48);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
     color: $c-white;
   }
   .row {
     padding-bottom: $spacing-lg;
   }
   .review-wrapper>div:last-child {
-    //max-height: 600px;
+    max-height: 600px;
   }
   .mobile-image {
     img {
