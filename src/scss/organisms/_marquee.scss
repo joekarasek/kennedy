@@ -29,119 +29,69 @@
 
 
   .slide1 {
-    .slide__title--meet {
-      color: #ec008c;
-      text-shadow: 2px 2px 8px #ffffff;
-      font-family: $ff-crimson;
-      margin-bottom: 0;
+    .slide__title {
+      color: #718F11;
+      font-family: $ff-berkshir;
+      margin-bottom: 20px;
       line-height: 0.8;
       font-weight: 400;
-      @include font-size(110px, 80px, 65px, 40px, 40px);
     }
-    .slide__title--kerber {
-      color: #0A6B70;
-      text-shadow: 2px 2px 8px rgba(255, 255, 255, 1);
-      margin-bottom: 0;
-      line-height: 1;
-      font-family: $ff-dancing;
-      @include font-size(120px,
-              90px,
-              80px,
-              30px,
-              30px);
-      font-weight: 700;
-    }
+
     .slide__copy {
       @include font-size(32px,
               30px,
               30px,
               30px,
               30px);
-      color: black;
+      color: #323437;
       margin-top: 5px;
-      margin-bottom: 15px;
+      margin-bottom: 70px;
       line-height: 1;
-      font-weight: 400;
     }
   }
   .slide2 {
-    .title {
-      color: #0A6B70;
-      font-weight: 700;
-      margin-bottom: 0;
-      line-height: 1;
-      text-shadow: 2px 2px 8px rgba(255, 255, 255, 1);
-      font-family: $ff-dancing;
-      @media screen and (min-width: $width-md - 1) { padding-top: 40px; }
-    }
-    .sub-title {
-      font-family: $ff-crimson;
-      color: #ec008c;
-      @include font-size(45px, 38px, 30px, 30px, 30px);
-    }
-    .preventative-copy {
+    .slide__title {
+      color: #718F11;
+      font-family: $ff-berkshir;
+      margin-bottom: 20px;
+      line-height: 0.8;
       font-weight: 400;
-      line-height: 1;
-    }
-    .btn {
-      @include lr-padding(75px, 65px, 20px, 20px, 20px);
-    }
-  }
-  .slide3 {
-    .title {
-      color: #ec008c;
-      font-weight: 700;
-      margin-bottom: 0;
-      line-height: 1;
-      font-family: $ff-dancing;
-      @media screen and (min-width: $width-md - 1) { padding-top: 40px; }
-    }
-    .title-2 {
-      font-weight: 700;
-      color: #0A6B70;
-      margin-bottom: 10px;
-      line-height: 1;
-      font-family: $ff-dancing;
-      padding-left: 30px;
     }
     .stars {
       line-height: 1.1;
       margin-bottom: 0;
     }
     .icon-star3 {
-      text-shadow: none;
-      color: #f7eb3f;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.50);
+      color: #FBDA04;
     }
     .copy {
       font-weight: 400;
       line-height: 1.2;
-    }
-    .btn {
-      @include lr-padding(80px, 60px, 60px);
+      margin-bottom: 60px;
     }
   }
-  .slide4 {
-    .title {
-      @include h1();
-      color: #85B04B;
+  .slide3 {
+    .title--no-insure {
+      color: #ffffff;
+      font-family: $ff-mont;
       margin-bottom: 0;
-      @include font-size(72px, 60px, 55px, 65px, 65px);
+      line-height: 1;
+      @include  font-size(62px, 60px, 35px);
     }
-    .sub-title {
-      color: #3A5464;
-      font-family: $ff-lato;
-      margin-bottom: 10px;
-      @include font-size(40px,
-              35px,
-              35px,
-              30px,
-              30px);
+    .title--sub {
+      color: #ffffff;
+      font-family: $ff-berkshir;
+      font-weight: 400;
+      line-height: 1;
+      margin-bottom: 60px;
+      @include  font-size(46px, 45px, 35px);
     }
     .preventative-copy {
-      color: #444444;
-      font-family: $ff-lato;
-      line-height: 1.3;
+      color: #ffffff;
+      text-transform: uppercase;
       font-weight: 400;
+      line-height: 1.1;
     }
     .btn {
       @include lr-padding(80px, 60px, 60px);
