@@ -1,18 +1,27 @@
 a.btn,
 button.btn {
-  font-family: $ff-lato;
+  font-family: $ff-roboto-condensed;
   font-weight: 400 !important;
+  letter-spacing: 1px;
 
-  background-color: #EC008C;
+  background-color: #718F11;
   color: $c-white;
-  border-radius: 30px;
+  border-radius: 8px;
   &:hover, &:focus {
-    background-color: darken(#EC008C, 15% );
+    background-color: darken(#718F11, 15% );
     box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.36);
     transition: all .3s ease;
     //transition: background-color .3s ease;
     text-decoration: none;
     color: $c-white;
+  }
+
+  &.btn--style-two {
+    background-color: #D8541E;
+    &:hover, &:focus {
+      background-color: darken(#D8541E, 15% );
+      box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.36);
+    }
   }
 
   padding: $spacing-sm $spacing-md;
