@@ -1,0 +1,31 @@
+.video-promo-full-slab {
+  position: relative;
+  background-image: url('/assets/location-video-bkgd_hover.jpg');
+  background-size: contain;
+  &:hover {
+    .video-promo-full-slab__background-image {
+      opacity: 0;
+    }
+  }
+
+  &__background-image {
+    width: 100%;
+    transition: opacity 0.3s ease;
+  }
+  &__text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    .vertical-centering {@include vertical-center();}
+    a {
+      color: #ffffff;
+    }
+    .text {
+      color: #ffffff;
+      font-family: $ff-mont;
+    }
+  }
+}
