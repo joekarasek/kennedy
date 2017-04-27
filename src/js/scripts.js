@@ -12,7 +12,11 @@
   HelloWorldDevsTysonSteele.googleMap('#google-map5', '42.6056908,-87.8442339', '42.6056908,-87.8442339');
 
   // ======= Carousels =======
-  HelloWorldDevsTysonSteele.marqueeCarousel({ autoplay: 6000 });
+  HelloWorldDevsTysonSteele.marqueeCarousel({
+    autoplay: 6000,
+    effect: 'fade',
+    speed: 500
+  });
   HelloWorldDevsTysonSteele.pyramidCarousel('.js-team-carousel', {
     navText: [
       '<img src="assets/arrow_left.png" alt="left navigation arrow">',
