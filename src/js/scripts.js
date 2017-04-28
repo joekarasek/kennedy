@@ -30,6 +30,11 @@
       '<img src="assets/arrow_right.png" alt="right navigation arrow">'
     ]
   });
+  HelloWorldDevsTysonSteele.associationCarousel('.js-associations-carousel', {
+    nav: false,
+    autoWidth: true,
+    slideBy: 1,
+  });
 
 }(jQuery, HelloWorldDevsTysonSteele));
 

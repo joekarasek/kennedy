@@ -188,6 +188,21 @@ var HelloWorldDevsTysonSteele = (function($,_) {
     $(target).owlCarousel(_.assign(defaultSettings, customSettings));
   };
 
+  var associationCarousel = function(target, customSettings) {
+    var defaultSettings = {
+      loop: true,
+      autoplay: true,
+      autoplaySpeed: 500,
+      autoplayTimeout: 2000,
+      autoplayHoverPause:false,
+      autoWidth: true,
+      nav: false,
+      dots: false,
+      margin: 40,
+    };
+    $(target).owlCarousel(_.assign(defaultSettings, customSettings));
+  };
+
   /**
    * Stops videos inside of a modal when that modal is closed (assuming the video is provided by iframe).
    * @param {string} modalTarget A css selector string
@@ -210,6 +225,7 @@ var HelloWorldDevsTysonSteele = (function($,_) {
     scrollToFix: scrollToFix,
     stopVideoModal: stopVideoModal,
     tourCarousel: tourCarousel,
+    associationCarousel: associationCarousel,
   };
 
 })(jQuery, _);

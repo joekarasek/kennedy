@@ -2,29 +2,156 @@
     {% include 'molecules/video-promo--full-slab-with-modal.twig' %}
     <div class="about__main">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-5">
-                    <h2 class="about__heading">Meet The Team</h2>
-                    <h3 class="about__doctor">Lori J. Kerber, <span class="about__doctor--title">DDS</span></h3>
-                    <h5 class="about__doctor-sub">Board-Certified Pediatric Dentist</h5>
-                    <p class="about__copy">Dr. Kerber has been in practice in Kenosha since 1999. She received her
-                        bachelor's degree in psychology from Cornell University. She received her dental degree from the
-                        University of Iowa, and then completed a 2-year pediatric dental residency program at the
-                        University of Tennessee-Memphis. Dr. Kerber is an Associate Fellow of World Clinical and Laser
-                        Imaging Institute. She is board certified since 2008.</p>
-                    <p class="about__copy">Dr. Kerber is a past President of the Kenosha County Dental Society. She has
-                        served on the Headstart Health Advisory Committee for many years, and was honored in 2008 by the
-                        Kenosha Unified Schools with their Business in Education Award.</p>
-                    <p class="about__copy">Dr. Kerber has 3 children, who keep her very busy. She also volunteers at her
-                        church with AWANA. Dr Kerber also enjoys horse racing and Cubs baseball.</p>
+            <div class="about__heading">
+                <h2 class="about__title">Meet Our Team</h2>
+            </div>
+            <div class="about__content">
+                <div class="about__image-wrapper">
+                    <img src="assets/team/gerald-kennedy.jpg" alt="{{ mainDoctor }}">
+                </div>
+                <div class="about__copy-wrapper">
+                    <h3 class="about__copy--doctor">Gerald Kennedy, DMD, MAGD</h3>
+                    <h5 class="about__copy--doctor-sub">GENERAL AND COSMETIC DENTIST</h5>
+                    <p class="about__copy">As the son of a dentist, Dr. Kennedy grew up in the business of teeth. As a child
+                        he was a typical teen that spent time as a patient in his father’s office. He also has the
+                        experience of more than three years of orthodontic treatment, wearing braces to straighten his
+                        teeth. He is a dental patient just like you!</p>
+                    <p class="about__copy">While attending OHSU School of Dentistry, Dr. Kennedy distinguished himself in
+                        his chosen profession. Upon graduation in 1991 with clinical and academic honors he had already
+                        established a track record of achievement and excellence. He graduated near the top of his class and
+                        receiving numerous Awards and Honors.</p>
+                    <p class="about__copy">One of the highlights of Dr. Kennedy’s professional career is his graduation from
+                        the internationally renowned Kois Center. The Kois Center offers motivated dentists the most
+                        up-to-date and advanced training in order to provide his patients with the best care available.</p>
+                    <p class="about__copy--mobile">Dr. Kennedy graduated from the OHSU School of Dentistry in 1991
+                        with clinical and academic honors he had already established a track record of achievement and
+                        excellence. He graduated near the top of his class and receiving numerous Awards and Honors.</p>
+                    <p class="about__copy--mobile">Dr. Kennedy and his team are dedicated to providing excellent care
+                        for you and your family, striving daily to deliver exceptional results for his patients. Come
+                        visit us and discover the Kennedy Dental difference!</p>
+                    <a href="#" data-target="#about--gerald" data-toggle="modal" class="about__copy--read-more">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%  include 'molecules/associations__carousel.twig' %}
+    <div class="about__secondary">
+        <div class="container">
+            <div class="about__mitchell">
+                <div class="about__image-wrapper about__image-wrapper--smaller-image">
+                    <img src="assets/team/jessica.jpg" alt="Jessica Mitchell">
+                </div>
+                <div class="about__copy-wrapper about__copy-wrapper--smaller-image">
+                    <h4 class="about__copy--doctor">Jessica Mitchell, EFDA</h4>
+                    <h5 class="about__copy--doctor-sub">DENTAL ASSISTANT</h5>
+                    <p class="about__copy">Jessica Saylor has been Dr. Kennedy’s left hand and main assistant for more than 10 years now. Being a part of the Kennedy Dental team this long has allowed her to really get to know her patients and their individual needs, while developing these relationships. She enjoys the St. Johns community so much that became a part of it in 2008 when she moved to the neighborhood.</p>
+                    <p class="about__copy--mobile">Jessica Saylor has been Dr. Kennedy’s left hand and main assistant for more than 10 years now. Being a part of the Kennedy Dental team this long has allowed her to really get to know her patients and their individual needs, while developing these relationships.</p>
+                    <a href="#" data-target="#about--jessica" data-toggle="modal" class="about__copy--read-more">READ MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="about__ybarra">
+                <div class="about__image-wrapper about__image-wrapper--smaller-image">
+                    <img src="assets/team/shirley.jpg" alt="Shirley Ybarra, RDH">
+                </div>
+                <div class="about__copy-wrapper about__copy-wrapper--smaller-image">
+                    <h4 class="about__copy--doctor">Shirley Ybarra, RDH</h4>
+                    <h5 class="about__copy--doctor-sub">REGISTERED DENTAL HYGIENIST</h5>
+                    <p class="about__copy">A desire to learn the latest advancements in dental care and technology are what first attracted Shirley Ybarra to Kennedy Dental. A native of North Portland, she received her dental education at Carrington College and Portland Community College, and then began a dental career over 10 years ago as a dental assistant as a dental assistant for Dr Jess Blankenship, Dr. Kennedy’s dental partner for over 20 years until his retirement in 2012. Shirley was attracted to dentistry for the opportunity to truly help people and create beautiful, healthy smiles. As a hygienist, she attends a variety of continuing education courses that keeps her job interesting and exciting.</p>
+                    <p class="about__copy--mobile">A native of North Portland, Shirley received her dental education at Carrington College and Portland Community College. Shirley was attracted to dentistry for the opportunity to truly help people and create beautiful, healthy smiles.</p>
+                    <a href="#" data-target="#about--shirley" data-toggle="modal" class="about__copy--read-more">READ MORE</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="about--mobile-fix">
-        <img src="/assets/kerber-team-mobile.jpg" alt="Doctor Kerber with a warm smile">
+    <!--Team Modals-->
+    <div class="team-modal-wrapper">
+        <div id="about--gerald" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Gerald Kennedy, DMD, MAGD</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-image hidden-xs hidden-sm"><img src="assets/team/gerald-kennedy.jpg" alt="{{ mainDoctor }}"></div>
+                        <p class="about__copy">In 2016, Dr. Kennedy attained his Mastership in the Academy of General
+                            Dentistry, an achievement that only 1% of all dentists gain during their careers. To attain
+                            this status, Dr. Kennedy completed over 1,100 hours of continuing education and a rigorous
+                            written exam.</p>
+                        <p class="about__copy">Dr. Kennedy and his team are dedicated to providing excellent care for
+                            you and your family, striving daily to deliver exceptional results for his patients. Come
+                            visit us and discover the Kennedy Dental difference!</p>
+                        <p class="about__copy--mobile">One of the highlights of Dr. Kennedy’s professional career is his
+                            graduation from the internationally renowned Kois Center, which offers dentists the most
+                            up-to-date and advanced training in order to provide his patients with the best care
+                            available. Dr. Kennedy recently was awarded Master status in the Academy of General
+                            Dentistry, which fewer than 1% of dentists attain. In order to become a Master in the AGD,
+                            Dr. Kennedy had to complete 1,100 hours of continuing education and a rigorous written
+                            exam.</p>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div id="about--jessica" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Jessica Mitchell, EFDA</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-image hidden-xs hidden-sm"><img src="assets/team/jessica.jpg" alt="Jessica Mitchell"></div>
+                        <p class="about__copy">Graduating from the Northwest Dental Institute in 2000 with top honors,
+                            Jessica has trained and worked in many specialty offices, such as Oral Surgery, Endodontic, and
+                            Periodontic. This has given her advanced skills and knowledge of the broad scope of patients
+                            dental needs. These skills are fully utilized with Dr. Kennedy and his quality dentistry.
+                            Jessica’s confidence and her unique skills allow her to provide outstanding quality and
+                            compassionate dental care.</p>
+                        <p class="about__copy">Jessica’s passion when she’s not working is exploring Oregon: hiking in the
+                            gorge, wine tasting at the coast, trying new restaurants in Portland, and kayaking in central
+                            Oregon.</p>
+                        <p class="about__copy--mobile">Graduating from the Northwest Dental Institute in 2000 with top
+                            honors, Jessica has trained and worked in many specialty offices, such as Oral Surgery,
+                            Endodontic, and Periodontic. This has given her advanced skills and knowledge of the broad scope
+                            of patients dental needs. These skills are fully utilized with Dr. Kennedy and his quality
+                            dentistry.</p>
+                        <p class="about__copy--mobile">Jessica’s passion when she’s not working is exploring Oregon: hiking
+                            in the gorge, wine tasting at the coast, trying new restaurants in Portland, and kayaking in
+                            central Oregon.</p>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div id="about--shirley" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Shirley Ybarra, RDH</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-image hidden-xs hidden-sm"><img src="assets/team/shirley.jpg" alt="Shirley Ybarra, RDH"></div>
+                        <p class="about__copy">Because she loves what she does, and she brings her gentle nature to work
+                            each day, she is a favorite with Kennedy Dental patients.</p>
+                        <p class="about__copy">Shirley is a volunteer for Give Kids a Smile and Oregon Mission of Mercy. She
+                            also enjoys spending time with her husband, traveling, camping, driving to car shows in her 1923
+                            Ford roadster, and taking long walks with her two Chihuahuas.</p>
+                        <p class="about__copy--mobile">As a hygienist, she attends a variety of continuing education courses
+                            that keeps her job interesting and exciting. Because she loves what she does, and she brings her
+                            gentle nature to work each day, she is a favorite with Kennedy Dental patients.</p>
+                        <p class="about__copy--mobile">Shirley is a volunteer for Give Kids a Smile and Oregon Mission of
+                            Mercy. She also enjoys spending time with her husband, traveling, camping, driving to car shows
+                            in her 1923 Ford roadster, and taking long walks with her two Chihuahuas.</p>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
     </div>
 
 </section>
-{% include 'molecules/logo-slab.twig' %}
+

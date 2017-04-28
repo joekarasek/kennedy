@@ -1,46 +1,98 @@
 .about {
-  background-image: url('/assets/kerber-team-section.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 80% center;
-  @media screen and (max-width: $width-sm) {
-    background-image: none;
-    background-color: #118e94;
-  }
-  
-  &__main {
+  background-color: #ffffff;
+  padding-bottom: 20px;
+
+  &__heading {
     padding-top: 30px;
-    padding-bottom: 60px;
+    text-align: center;
   }
-    &__heading {
-      color: #ffffff;
-      margin-bottom: 45px;
-      @media (max-width: $width-sm - 1) {
-        text-align: center;
-      }
-    }
-    &__doctor {
-      color: #f7eb3f;
-      margin-bottom: 5px;
-      line-height: 1;
-      &--title {
-        @include h4();
-      }
-    }
-    &__doctor-sub {
-      color: #ffffff;
-    }
-    &__copy {
-      color: #ffffff;
-      line-height: 1.1;
+    &__title {
+      color: #718f11;
     }
 
-  &--mobile-fix {
-    display: none;
-    @media (max-width: $width-sm - 1) {
-      margin-top: -60px;
-      display: block;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    @media (min-width: $width-sm) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
   }
+    &__image-wrapper {
+      text-align: center;
+      @media (min-width: $width-sm) {
+        width: 40%;
+      }
+      @media (max-width: $width-sm) {
+        padding-bottom: 10px;
+        img { max-width: 280px; }
+      }
+    }
+    &__copy-wrapper {
+      @media (min-width: $width-sm) {
+        padding: 0 20px;
+        width: 60%;
+      }
+    }
+      &__copy {
+        @media (max-width: $width-md) {
+          display: none;
+        }
+        &--doctor {
+          color: #718f11;
+          line-height: 1;
+          margin-bottom: 0;
+          font-family: $ff-mont;
+          font-weight: 700;
+        }
+        &--mobile {
+          display: none;
+          @media (max-width: $width-md) {
+            display: inherit;
+          }
+        }
+        &--read-more {
+          color: #718f11;
+          text-decoration: underline;
+          font-size: 18px;
+        }
+      }
+
+  //Additional Team Mates Styling
+  &__mitchell,
+  &__ybarra {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $width-sm) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__image-wrapper--smaller-image {
+    @media (min-width: $width-sm) {
+      width: 30%;
+    }
+  }
+  &__copy-wrapper--smaller-image {
+    @media (min-width: $width-sm) {
+      width: 70%;
+    }
+  }
+
+  &__mitchell .about__image-wrapper {
+    order: 1;
+    @media (max-width: $width-sm) {
+      order: 0;
+    }
+  }
+
 }
+
+
 
