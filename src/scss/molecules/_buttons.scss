@@ -2,11 +2,14 @@ a.btn,
 button.btn {
   font-family: $ff-roboto-condensed;
   font-weight: 400 !important;
+  @include font-size(26px, 24px, 23px, 23px, 22px);
   letter-spacing: 1px;
 
   background-color: #718F11;
   color: $c-white;
   border-radius: 8px;
+  padding: $spacing-sm $spacing-md;
+
   &:hover, &:focus {
     background-color: darken(#718F11, 15% );
     box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.36);
@@ -23,10 +26,18 @@ button.btn {
       box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.36);
     }
   }
+  &.btn--style-three {
+    background-color: rgba(255, 255, 255, 0.80);
+    color: #718f11;
+    border: solid 2px #718F11;
+    &:hover, &:focus {
+      background-color: #ffffff;
+      color: #718f11;
+      box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.36);
+    }
+  }
 
-  padding: $spacing-sm $spacing-md;
 
-  font-size: 17px;
   @media screen and (max-width: $width-sm) {
     font-size: 16px;
   }
