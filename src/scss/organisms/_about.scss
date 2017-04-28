@@ -1,6 +1,11 @@
 .about {
   background-color: #ffffff;
   padding-bottom: 20px;
+  &__secondary {
+    background-color: #f4f3ee;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
 
   &__heading {
     padding-top: 30px;
