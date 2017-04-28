@@ -1,0 +1,52 @@
+.gallery {
+    $c-no-insurance: #718F11;
+    $c-sub-header: #718F11;
+    $c-preventative: #323437;
+    $c-copy: #323437;
+    $c-mobile-bg: #ffffff;
+
+    padding-top: 50px;
+    background-image: url('/assets/smile-gallery.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @media (max-width: $width-sm - 1) {
+      background-color: $c-mobile-bg;
+      background-image: none;
+      .row>div {
+        text-align: center;
+      }
+    }
+
+    &__title {
+      font-family: $ff-mont;
+      font-weight: 700;
+      margin-bottom: 30px;
+      line-height: 1.1;
+      color: $c-no-insurance;
+    }
+    &__copy {
+      font-family: $ff-roboto-condensed;
+      font-weight: 400;
+      margin-bottom: 75px;
+      color: #323437;
+    }
+
+    .btn {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      @include lr-padding(80px, 70px, 60px, 60px, 40px);
+      margin-bottom: 100px;
+    }
+
+    //Fix for insurance background on mobile
+    .mobile-insurance-fix {
+      display: none;
+      @media (max-width: $width-sm - 1) {
+        margin-top: -100px;
+        display: block;
+      }
+    }
+
+
+}

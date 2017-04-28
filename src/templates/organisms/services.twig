@@ -1,25 +1,31 @@
 <section id="section-services">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-5 col-md-5 col-lg-4">
-                <div class="heading">
-                    <h2>Comprehensive Services</h2>
-                    <h5>With our kid-oriented style and fun personalities, we get children excited about their dental
-                        care, helping them to develop healthy habits that will last a lifetime.</h5>
-                </div>
+    <div class="heading">
+        <div class="container">
+            <h2>OUR SERVICES</h2>
+            <p>By actively preventing disease and decay through regular home care, professional dental cleanings and
+                regular exams, we’ll partner with you to maintain your healthy, beautiful smile. Prevention is always better
+                than treatment, so if it’s been a while since you’ve seen a dentist, please give us a call or <a href="#" data-toggle="modal" data-target="#requestAppointmentForm">
+                    click&nbsp;to&nbsp;request&nbsp;an&nbsp;appointment</a>.</p>
+        </div>
+    </div>
 
-                <ul class="service-list">
-                    {% for service in services %}
-                        <li class="service-list__item">
-                            <a href="#" data-toggle="modal" data-target="#{{ service.modalTarget }}">
-                                <i class="icon-ok-sign"></i>
-                                <h5>{{ service.title }}</h5>
-                            </a>
-                        </li>
-                    {% endfor %}
-                </ul>
+
+
+
+    <!--services-additional-->
+    <div class="services--additional">
+        <div class="container-fluid">
+            <div class="row">
+                {% for service in services %}
+                    <div class="col-sm-6 col-md-3 service-card"><a href="#" data-target="#service--{{ service.modalTarget }}" data-toggle="modal" class="image-link"><img src="assets/services/{{ service.image }}" alt="{{ service.title }}"></a>
+                        <div class="services--thumbnail-text odd">
+                            <h6><a href="#" data-target="#service--{{ service.modalTarget }}" data-toggle="modal">{{ service.title }}</a></h6>
+                            <a href="#" data-target="#service--{{ service.modalTarget }}" data-toggle="modal" class="services-plus">LEARN MORE</a>
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
-    
+
 </section>

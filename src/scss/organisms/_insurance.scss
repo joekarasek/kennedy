@@ -1,9 +1,9 @@
 #section-insurance {
 
-  $c-no-insurance: #EC008C;
-  $c-sub-header: #EC008C;
-  $c-preventative: #000000;
-  $c-copy: #000000;
+  $c-no-insurance: #718F11;
+  $c-sub-header: #718F11;
+  $c-preventative: #323437;
+  $c-copy: #323437;
   $c-mobile-bg: #ffffff;
 
   padding-top: 50px;
@@ -20,7 +20,8 @@
   }
 
   .title {
-    font-family: $ff-dancing;
+    font-family: $ff-mont;
+    text-transform: uppercase;
     font-weight: 700;
     @include font-size(65px, 60px, 55px, 48px, 35px);
     margin-bottom: 0;
@@ -33,7 +34,8 @@
                        28px,
                        28px,
                        22px);
-    font-weight: 400;
+    font-family: $ff-mont;
+    font-weight: 700;
     color: $c-sub-header;
     margin-bottom: 0;
   }
@@ -42,6 +44,7 @@
     line-height: 1.2;
     padding-top: 30px;
     color: $c-preventative;
+    text-transform: uppercase;
     @include font-size(32px, 30px, 28px, 28px, 20px);
   }
   .list-item {
@@ -49,15 +52,8 @@
     p {
       list-style: none;
       font-size: 21px;
-      font-family: $ff-crimson;
       margin-bottom: 0;
-      line-height: 1.1;
-    }
-    .icon-ok-sign {
-      float: left;
-      margin-right: 10px;
-      font-size: 24px;
-      color: #118E94;
+      line-height: 1.0;
     }
   }
   .btn {

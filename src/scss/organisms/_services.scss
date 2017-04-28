@@ -3,6 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 75% center;
+  padding-bottom: 30px;
   @media (max-width: $width-sm - 1) {
     background-image: none;
     background-color: #ffffff;
@@ -16,49 +17,74 @@
   }
 
   .heading {
-    text-align: left;
+    text-align: center;
     h2 {
-      color: #118E94;
+      color: #718F11;
       margin-bottom: 10px;
       padding-top: $spacing-md;
       padding-bottom: $spacing-sm;
     }
-    h5 {
-      line-height: 1;
+    p {
+      line-height: 1.2;
+      margin-bottom: 45px;
+      a {
+        color: #718f11;
+        text-decoration: underline;
+      }
     }
   }
 
-  .service-list {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    &__item {
-      list-style: none;
-      clear: both;
-      h5 {
-        margin-bottom: -12px;
-        line-height: 1;
-        margin-top: 0px;
-        padding-top: 8px;
-      }
-      p {
-        list-style: none;
-        font-size: 21px;
-        font-family: $ff-crimson;
-        margin-bottom: 0;
-        line-height: 1.1;
-      }
-      .icon-ok-sign {
+  .services--additional {
+    //override bootstrap grid gutters
+    .col-sm-6, .col-md-3 {
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+      @media screen and (max-width: $width-sm) and (min-width: 550px) {
+        width: 50%;
         float: left;
-        margin-right: 10px;
-        font-size: 24px;
-        color: #118E94;
       }
-      a:hover {
-        .icon-ok-sign {
-          color: #22BBC3;
-          transition: color .3s ease;
-        }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .services--thumbnail-text {
+      width: 100%;
+      h6 {
+        a { @include link-color(#718F11); }
+        color: #718f11;
+        padding-left: 10px;
+        margin-bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        font-size: 28px;
+        font-family: $ff-mont;
+        font-weight: 700;
+        line-height: 1;
       }
+      .services-plus {
+        font-family: $ff-roboto-condensed;
+        font-weight: 400;
+        color: #444444;
+        font-size: 18px;
+        padding-left: 10px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+
+  .service-card:hover {
+    .image-link {
+      @include hover-plus();
+    }
+    h6 {
+      color: #718f11;
+      text-decoration: underline;
+    }
+    .services-plus {
+      text-decoration: underline;
     }
   }
 

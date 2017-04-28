@@ -46,6 +46,15 @@
 
         {% include 'organisms/services.twig' %}
 
+        {% include 'molecules/cta__two-to-one.twig' with
+            {
+                'id': 'id="cta-three"',
+                'existingPatients': true
+            }
+        %}
+
+        {% include 'organisms/smile-gallery.twig' %}
+
         {% include 'organisms/tour.twig' %}
 
         {#{% include 'organisms/location--three-column-classic.twig' %}#}
