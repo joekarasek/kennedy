@@ -167,6 +167,11 @@ var HelloWorldDevsTysonSteele = (function($,_) {
     $(target).owlCarousel(_.assign(defaultSettings, customSettings));
   };
 
+  /**
+   * Single slide carousel great for tour sections.
+   * @param target
+   * @param customSettings
+   */
   var tourCarousel = function(target, customSettings) {
     var defaultSettings = {
       items: 1,
@@ -188,6 +193,11 @@ var HelloWorldDevsTysonSteele = (function($,_) {
     $(target).owlCarousel(_.assign(defaultSettings, customSettings));
   };
 
+  /**
+   * Fluid carousel that holds max amount of items. Great for displaying association logos
+   * @param target
+   * @param customSettings
+   */
   var associationCarousel = function(target, customSettings) {
     var defaultSettings = {
       loop: true,
@@ -216,6 +226,15 @@ var HelloWorldDevsTysonSteele = (function($,_) {
     });
   };
 
+  /**
+   * Update the copyright year to be the current year. Removes text from target and adds the current year.
+   * @param target
+   */
+  var updateCopyright = function(target) {
+    var currentYear = new Date().getFullYear();
+    $(target).text(currentYear);
+  };
+
   return {
     noOrphans: noOrphans,
     requestAppointment: requestAppointment,
@@ -226,6 +245,7 @@ var HelloWorldDevsTysonSteele = (function($,_) {
     stopVideoModal: stopVideoModal,
     tourCarousel: tourCarousel,
     associationCarousel: associationCarousel,
+    updateCopyright: updateCopyright,
   };
 
 })(jQuery, _);
