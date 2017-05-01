@@ -2,4 +2,32 @@
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: white;
+
+  .owl-carousel .owl-nav [class*=owl-] {
+    right: 0;
+    background-color: #323437;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .owl-carousel:hover .owl-nav [class*=owl-] img {
+    transition: display .3s ease;
+  }
+  .owl-carousel .owl-nav .owl-prev {
+    left: 0;
+  }
+
+  .owl-carousel:hover .owl-nav .owl-next {
+    right: 0;
+  }
+  .owl-carousel:hover .owl-nav .owl-prev {
+    left: 0;
+  }
+
+  .owl-carousel .owl-nav [class*=owl-]:hover {
+    background-color: #595955 !important;
+    color: $c-white !important;
+    text-decoration: none;
+  }
 }

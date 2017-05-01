@@ -19,11 +19,6 @@ $offset: -25px;
   transition: all .3s ease;
   & [class*=icon-] {
     font-size: 32px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -15px;
-    margin-left: -5px;
   }
   img {
     @include vertical-center;

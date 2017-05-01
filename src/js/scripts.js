@@ -26,14 +26,21 @@
   HelloWorldDevsTysonSteele.tourCarousel('.js-tour-carousel', {
     items: 1,
     navText: [
-      '<img src="assets/arrow_left.png" alt="left navigation arrow">',
-      '<img src="assets/arrow_right.png" alt="right navigation arrow">'
+      '<i class="icon-chevron-left"></i>',
+      '<i class="icon-chevron-right"></i>'
     ]
   });
   HelloWorldDevsTysonSteele.associationCarousel('.js-associations-carousel', {
     nav: false,
     autoWidth: true,
     slideBy: 1,
+  });
+  HelloWorldDevsTysonSteele.tourCarousel('.js-gallery-carousel', {
+    items: 1,
+    navText: [
+      '<img src="assets/arrow_left.png" alt="left navigation arrow">',
+      '<img src="assets/arrow_right.png" alt="right navigation arrow">'
+    ]
   });
 
 }(jQuery, HelloWorldDevsTysonSteele));
