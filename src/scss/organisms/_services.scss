@@ -19,7 +19,7 @@
   .heading {
     text-align: center;
     h2 {
-      color: #718F11;
+      color: #5a710d;
       margin-bottom: 10px;
       padding-top: $spacing-md;
       padding-bottom: $spacing-sm;
@@ -28,7 +28,7 @@
       line-height: 1.2;
       margin-bottom: 45px;
       a {
-        color: #718f11;
+        color: #5a710d;
         text-decoration: underline;
       }
     }
@@ -55,8 +55,8 @@
       padding-top: 5px;
       padding-bottom: 10px;
       h6 {
-        a { @include link-color(#718F11); }
-        color: #718f11;
+        a { @include link-color(#5a710d); }
+        color: #5a710d;
         padding-left: 10px;
         margin-bottom: 0;
         padding-top: 10px;
@@ -81,7 +81,7 @@
       @include hover-plus();
     }
     h6 {
-      color: #718f11;
+      color: #5a710d;
       text-decoration: underline;
     }
     .services-plus {
