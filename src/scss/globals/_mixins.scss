@@ -97,6 +97,10 @@
   }
   .bf-pro {
     color: #FFF !important;;
+    text-decoration: underline !important;
+    &:hover {
+      text-align: none !important;
+    }
   }
 }
 

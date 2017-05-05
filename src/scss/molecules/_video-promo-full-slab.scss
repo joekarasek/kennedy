@@ -26,6 +26,10 @@
     .text {
       color: #ffffff;
       font-family: $ff-mont;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none !important;
+      }
     }
   }
 }

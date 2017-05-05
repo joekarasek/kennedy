@@ -23,12 +23,11 @@
   }
   .review-wrapper>div:last-child {
     max-height: 600px;
-  }
+  }m
   .mobile-image {
     img {
       width: 100%;
     }
   }
-
     @include birdeye-footer();
 }

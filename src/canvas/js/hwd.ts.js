@@ -200,15 +200,26 @@ var HelloWorldDevsTysonSteele = (function($,_) {
    */
   var associationCarousel = function(target, customSettings) {
     var defaultSettings = {
+      items: 1,
       loop: true,
       autoplay: true,
       autoplaySpeed: 500,
       autoplayTimeout: 2000,
       autoplayHoverPause:false,
-      autoWidth: true,
+      autoWidth: false,
       nav: false,
       dots: false,
       margin: 40,
+      slideB: 1,
+      responsive: {
+        480: {
+          items: 2
+        },
+        768: {
+          autoWidth: true,
+          items: 3
+        }
+      }
     };
     $(target).owlCarousel(_.assign(defaultSettings, customSettings));
   };

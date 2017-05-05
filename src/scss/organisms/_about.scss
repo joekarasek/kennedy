@@ -62,6 +62,10 @@
           color: #5a710d;
           text-decoration: underline;
           font-size: 18px;
+          &:hover {
+            color: #5a710d;
+            text-decoration: none !important;
+          }
         }
       }
 

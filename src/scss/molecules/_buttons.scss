@@ -9,6 +9,7 @@ button.btn {
   color: $c-white;
   border-radius: 8px;
   padding: $spacing-sm $spacing-md;
+  text-decoration: underline;
 
   &:hover, &:focus {
     background-color: darken(#5a710d, 15% );

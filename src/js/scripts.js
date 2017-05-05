@@ -30,9 +30,14 @@
       '<i class="icon-chevron-right"></i>'
     ]
   });
+  // HelloWorldDevsTysonSteele.pyramidCarousel('.js-associations-carousel', {
+  //   nav: false,
+  //   // autoWidth: true,
+  //   slideBy: 1,
+  // });
   HelloWorldDevsTysonSteele.associationCarousel('.js-associations-carousel', {
     nav: false,
-    autoWidth: true,
+    autoWidth: false,
     slideBy: 1,
   });
   HelloWorldDevsTysonSteele.tourCarousel('.js-gallery-carousel', {
