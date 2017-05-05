@@ -58,44 +58,30 @@
 #smile-gallery-modal {
 
   .owl-carousel .owl-nav [class*=owl-] {
-    right: -55px;
+    right: 0;
+    top: 5%;
+    background-color: rgba(89, 89, 85, 0);
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: $width-sm) {
-      opacity: 0;
-      right: 0;
-    }
   }
   .owl-carousel:hover .owl-nav [class*=owl-] img {
     transition: display .3s ease;
   }
   .owl-carousel .owl-nav .owl-prev {
-    left: -55px;
-    @media (max-width: $width-sm) {
-      left: 0;
-    }
+    left: 0;
   }
 
   .owl-carousel:hover .owl-nav .owl-next {
-    right: -55px;
-    @media (max-width: $width-sm) {
-      right: 0;
-    }
+    right: 0;
   }
   .owl-carousel:hover .owl-nav .owl-prev {
-    left: -55px;
-    @media (max-width: $width-sm) {
-      left: 0;
-    }
+    left: 0;
   }
 
   .owl-carousel .owl-nav [class*=owl-]:hover {
+    color: $c-white !important;
     text-decoration: none;
-  }
-  .owl-carousel:hover .owl-nav [class*=owl-] {
-    @media (max-width: $width-sm) {
-      opacity: 0.7;
-    }
   }
 }
