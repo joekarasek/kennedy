@@ -51,6 +51,7 @@
     &__new-patient-number {
       display: block;
       font-size: 44px;
+      @include font-size(44px, 42px, 40px, 38px, 36px);
       font-family: $ff-roboto-condensed;
       font-weight: 700;
       color: #595955;

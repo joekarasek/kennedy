@@ -18,8 +18,13 @@
     bottom: 0;
     left: 0;
     right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
-    .vertical-centering {@include vertical-center();}
+
     a {
       color: #ffffff;
     }
@@ -27,6 +32,7 @@
       color: #ffffff;
       font-family: $ff-mont;
       text-decoration: underline;
+      margin-bottom: 0;
       &:hover {
         text-decoration: none !important;
       }
